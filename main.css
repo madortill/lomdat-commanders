@@ -1,33 +1,21 @@
 @font-face {
-    font-family: karantina;
-    src: url("assets/font/Karantina-Light.ttf");
-    font-weight: 100;
-}
-@font-face {
-    font-family: karantina-bold;
-    src: url("assets/font/Karantina-Bold.ttf");
+    font-family: Assistant;
+    src: url("assets/fonts/Assistant-Light.ttf");
 }
 
 @font-face {
-    font-family: Assistant;
-    src: url("assets/font/Assistant-Light.ttf");
+    font-family: Karantina-Bold;
+    src: url("assets/fonts/Karantina-Bold.ttf");
+}
+
+@font-face {
+    font-family: Karantina;
+    src: url("assets/fonts/Karantina-Light.ttf");
 }
 
 * {
     font-family: Assistant;
-}
-
-body, html {
-    font-family: Assistant;
-    width: 100%;
-    height: 90%;
-    margin: 0;
-    background-image: url("assets/media/background.svg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    direction: rtl;
     color: white;
-    overflow: hidden;
 }
 
 /* טוען */
@@ -62,218 +50,183 @@ body, html {
     }
 }
 
+body, html {
+    font-family: Assistant;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    background-image: url("assets/media/background.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    direction: rtl;
+}
+
 .logo {
-    /* position: fixed; */
+    position: fixed;
     width: 18vw;
-    /* top: 1vh; */
+    top: 1vh;
     height: 7vh;
-    /* left: 1vw; */
+    left: 1vw;
 }
 
 .header {
     position: absolute;
-    width: 94%;
+    width: 100%;
     height: 10vh;
-    margin: 0px;
+    margin: 0;
     display: flex;
     align-content: center;
-    justify-content: space-between;
-    align-items: center;
-    flex-direction: row-reverse;
-    right: 3%;
+    flex-wrap: wrap;
 }
 
-.title {
-    width: 100%;
-    color: white;
-    font-size: 3em;
-    text-align: center;
-    font-family: karantina-bold;
-}
-
-.div-body, .body-odot {
+.body {
     position: absolute;
     top: 10vh;
     width: 100%;
     height: 90vh;
-    overflow: hidden;
+    overflow: scroll;
 }
 
-.odot-logo {
-    width: 7vw;
-    /* position: fixed;
-    top: 1vh;
-    height: 3.5vh;
-    right: 1vw;
-    display: block; */
+.title {
+    width: 100%;
+    font-size: 6em;
+    text-align: center;
+    font-family: karantina-bold;
 }
 
-.div-odot {
-    display: none;
+.banner {
+    position: relative;
+    height: 19vh;
+    width: 93vw;
+    margin: 5em 2em;
+    background-color: white;
+}
+
+.background-img-commander {
     width: 100%;
     height: 100%;
-}
-
-.p-odot {
-    margin: 0.5em;
-}
-
-.div-p-odot {
-    /* margin-top: 3em; */
     font-family: Assistant;
-    font-size: 1.2em;
 }
 
-.till-logo {
-    width: 23vW;
-    height: auto;
-}
-
-.div-middle {
-    display: flex;
-    align-items: center;
-    margin-left: 1em;
-    margin-right: 0em;
-    margin-top: 2em;
-    justify-content: space-around;
-}
-
-.back-button {
-    position: absolute;
-    bottom: 12vh;
-    width: 18vw;
-    right: 2vh;
-}
-
-.character {
-    width: 60vw;
-    height: 61vh;
-    /* position: absolute; */
-    bottom: 0;
-}
-
-.bubble {
-    background-image: url("assets/media/speechbubble_up.svg");
-    width: 90vw;
-    height: 30vh;
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
-    display: flex;
-    justify-content: center;
-}
-
-.front-div {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.p-bubble {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: black;
-    font-size: 1.7em;
-    margin: 3em;
-    text-align: center;
-}
-
-.next-button {
-    position: absolute;
-    bottom: 12vh;
-    /* width: 30vw; */
-    width: 18vw;
-    left: 5vw;
-    display: block;
-}
-
-#back-button {
+/* .commercial {
+    font-size: 4em;
+    position: fixed;
+    width: 80vw;
+    background-color: white;
+    background-image: url("");
+    top: 27vh;
+    height: 50vh;
+    z-index: 1;
+    right: 10vw;
     display: none;
-}
-
-/* sort to groups */
-.dropContainer{
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-}
-
-.drop {
-    background-color: #0b3b8c;
-    border-radius: 16px;
-    border: #4f77a9 solid;
-    width: 88vw;
-    height: 18vh;
-    margin: 1em;
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.dragContainer{
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.drag {
-    background-image: url(assets/media/Artboard\ 167.svg);
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
-    width: fit-content;
-    height: 5vh;
     text-align: center;
-    margin: 1em;
-    color: black;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+} */
+
+.background-name {
+    width: 100%;
+    position: absolute;
+    height: fit-content;
     font-family: Assistant;
-    padding-left: 0.6em;
-    padding-right: 0.6em;
-}
-
-.div-drop {
-    display: none;
-}
-
-#character-mistake {  
-    width: 43vw;
-    height: 71vh;
-    position: absolute;
-    bottom: -31vh;
-    right: 0vh;
-}
-
-#bubble-drop {
-    background-image: url(assets/media/speechbubble_side.svg);
-    width: 61vw;
-    height: 38vh;
-    position: absolute;
-    left: -3vw;
-    top: -5vh;
-}
-
-.div-mistake {
-    width: 98vw;
-    height: 28vh;
-    /* border: aliceblue solid; */
-    position: absolute;
-    bottom: -29vh;
-    background-color: #0000008a;
-}
-
-.animation {
-    animation-name: move;
-    animation-duration: 5s;
-}
-
-@keyframes move {
-    0% {bottom: -29vh;}
-    40% {bottom: 8vh;}
-    60% {bottom: 8vh;}
-    100% {bottom: -29vh;}
-}
-
-.p-groups {
+    background-color: #c9c9c9c7;
+    bottom: 0vh;
+    color: black;
+    font-size: 4em;
     margin: 0;
-    margin-right: 1em;
+}
+
+.commercial, .div-lost, .div-win {
+    width: 84vw;
+    font-size: 3.5em;
+    height: fit-content;
+    background-image: url(assets/media/questions_popup.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 30px;
+    position: fixed;
+    top: 19vh;
+    right: 8vw;
+    z-index: 1;
+    text-align: center;
+}
+
+.div-lost {
+    display: none;
+}
+
+.div-win {
+    display: none;
+}
+
+.commercial {
+    display: none;
+}
+
+.button-for-Question {
+    height: 5vh;
+    width: 31vw;
+    font-size: 0.8em;
+    background-image: url(assets/media/questions_popup.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 24px;
+    margin-bottom: 1em;
+}
+
+.multipleQuestionContainer {
+    width: 84vw;
+    height: fit-content;
+    background-image: url(assets/media/questions_popup.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 30px;
+    position: fixed;
+    top: 19vh;
+    right: 8vw;
+    z-index: 1;
+    display: none;
+    text-align: center;
+}
+
+.background-black {
+    position: fixed;
+    background-color: #0000005c;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    display: none;
+}
+
+.multipleQuestion {
+    font-family: Karantina;
+    font-size: 8em;
+    margin: 0.4em;
+}
+
+.multipleAns  {
+    background-image: url(assets/media/generic_button.svg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position-y: center;
+    width: 45vw;
+    height: 7vh;
+    /* line-height: 6.5vh; */
+    font-size: 3em;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.ansContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.num-question {
+    font-size: 2em;
+}
+
+.win-p {
+    margin: 1em;
 }
