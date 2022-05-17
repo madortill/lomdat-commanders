@@ -61,21 +61,21 @@ body, html {
 }
 
 .logo {
-    position: fixed;
     width: 18vw;
-    top: 1vh;
     height: 7vh;
-    left: 1vw;
 }
 
 .header {
     position: absolute;
-    width: 100%;
+    width: 94%;
     height: 10vh;
-    margin: 0;
+    margin: 0px;
     display: flex;
     align-content: center;
-    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row-reverse;
+    right: 3%
 }
 
 .title {
@@ -120,7 +120,7 @@ body, html {
     height: fit-content;
     font-family: Assistant;
     background-color: #c9c9c9c7;
-    bottom: 0;
+    bottom: 0vh;
     color: black;
     font-size: 4em;
     margin: 0;
@@ -149,13 +149,12 @@ body, html {
 
 .div-p {
     position: absolute;
-    /* top: 4vw; */
     right: 2vh;
 }
 
 .back-button {
     position: absolute;
-    bottom: 3vh;
+    bottom: 13vh;
     width: 18vw;
     right: 2vh;
 }
@@ -165,12 +164,7 @@ body, html {
 }
 
 .odot-logo {
-    position: fixed;
     width: 6vw;
-    top: 1vh;
-    height: 3.5vh;
-    right: 1vw;
-    display: block;
 }
 
 .div-odot {
@@ -188,9 +182,15 @@ body, html {
 }
 
 .till-logo {
-    position: absolute;
     width: 23vW;
-    top: 10vw;
-    left: 9vw;
     height: auto;
+}
+
+.div-middle {
+    display: flex;
+    align-items: center;
+    margin-left: 1em;
+    margin-right: 0em;
+    margin-top: 2em;
+    justify-content: space-around;
 }
