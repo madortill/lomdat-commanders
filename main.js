@@ -28,9 +28,6 @@ let next = (event) => {
         document.querySelector(`.start`).style.display = "block";  
         document.querySelector(`.secondPart`).style.display = "none";
     })
-    
-
-    // document.querySelector(`slector`)  
 }
 
 let odot = () => {
@@ -39,11 +36,11 @@ let odot = () => {
     document.querySelector(`.div-odot`).style.display = "block";  
     document.querySelector(`.body`).style.overflow = "hidden";
     document.querySelector(`.title`).innerHTML = "אודות";
-    document.querySelector(`.odot-logo`).style.display = "none";  
+    document.querySelector(`.odot-logo`).style.visibility = "hidden";  
     document.querySelector(`#back-button-odot`).addEventListener("click", () => {
         document.querySelector(`.start`).style.display = "block";
         document.querySelector(`.div-odot`).style.display = "none";  
-        document.querySelector(`.odot-logo`).style.display = "block";  
+        document.querySelector(`.odot-logo`).style.visibility = "visible";  
         document.querySelector(`.body`).style.overflow = "scroll";
         document.querySelector(`.title`).innerHTML = "הכר את המפקד";
     })
