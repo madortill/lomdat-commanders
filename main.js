@@ -22,7 +22,7 @@ const info = [
     // מפקד מספר 4
     {
         nameCommander : "ניצן סלמון",
-        story : "מאיה נולדה בשארלוט שבצפון קרולינה ועשתה עליה ארצה כדי לשרת בTASA. בת יחידה",
+        story : "ניצן נולדה בשארלוט שבצפון קרולינה ועשתה עליה ארצה כדי לשרת בTASA. בת יחידה",
         years : "2017-2021",
     },
     // מפקד מספר 5
@@ -103,7 +103,7 @@ window.addEventListener("load", () => {
 let add = () => {
     for (let i = 1; i <= info.length; i++) {
         let item = El("div",{class : "banner"},
-            El("img",{attributes: {class: `background-img-commander`, id: `${i}`, src : `assets/media/600ppi/small_mefaked_${i}-100.jpg` , alt : `mefaked_${i}`}, listeners : {click : next}}),
+            El("img",{attributes: {class: `background-img-commander`, id: `${i}`, src : `assets/media/600ppi/mefaked_${i}.png` , alt : `mefaked_${i}`}, listeners : {click : next}}),
             El("p",{class: `background-name`}, info[i - 1].nameCommander,),            
         );
         document.querySelector(`.start`).append(item)
@@ -118,7 +118,7 @@ let next = (event) => {
     document.querySelector(`#num-com`).innerHTML =  `שנות פעילות: <br> ${info[numCommander - 1].years}`;  
     document.querySelector(`#quote`).innerHTML = `ציטוט ידוע: <br> ${data[numCommander - 1].quote}`;  
     document.querySelector(`#story`).innerHTML = `רקע: <br> ${info[numCommander - 1].story}`;  
-    document.querySelector(`#img-com`).setAttribute("src", `assets/media/600ppi/small_mefaked_${numCommander}-100.jpg`);
+    document.querySelector(`#img-com`).setAttribute("src", `assets/media/600ppi/mefaked_${numCommander}.png`);
     document.querySelector(`#back-button`).addEventListener("click" , () => {
         document.querySelector(`.title`).innerHTML = "הכר את המפקד";  
         document.querySelector(`.start`).style.display = "flex";  
