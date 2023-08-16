@@ -178,6 +178,7 @@ body, html {
 
 .odot-logo {
     width: 7vw;
+    transform: rotate(180deg);
 }
 
 .div-odot {
@@ -197,6 +198,9 @@ body, html {
 .till-logo {
     width: 23vW;
     height: auto;
+    position: absolute;
+    bottom: 11vh;
+    left: 2vw;
 }
 
 .div-middle {
